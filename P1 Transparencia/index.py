@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jul  9 20:53:58 2020
-
 @author: pcardona
 matplotlib: https://matplotlib.org/
 cv2 : https://opencv.org/  
@@ -61,6 +60,6 @@ img_Color = fourChannels(img_Color)
 img_Color = cut(img_Color)
 img_Color = transBg(img_Color)
 
-cv2.imwrite("img/image_transparente.png", img_Color)
+mpimg.imsave("img/image_transparente.png", img_Color)
 plt.imshow(img_Color)
 img_Color.shape
